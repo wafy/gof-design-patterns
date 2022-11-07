@@ -21,3 +21,8 @@
 - java.lang.Calendar 또는 java.lang.NumberFormat
 - 스프링의 BeanFactory
   - Object 타입이 Product를 만드는 BeanFactory라는 Creator!
+
+# 추상 팩토리(Abstract factory) 패턴 
+## 서로 관련 있는 여러 객체를 만들어 주는 인터페이스
+- 구체적으로 어떤 클래스의 인스턴스를(concrate product)를 사용하는지 감출 수 있다.
+- 추상클래스나 인터페이스로 정의하고 만드는건 팩토리랑 비슷하지만 클라이언트와 같이 봐야한다.

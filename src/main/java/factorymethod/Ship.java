@@ -1,5 +1,10 @@
 package factorymethod;
 
+import abstract_factory.Anchor;
+import abstract_factory.Wheel;
+import abstract_factory.WhiteAnchor;
+import abstract_factory.WhiteWheel;
+
 import java.util.Objects;
 
 public class Ship {
@@ -9,6 +14,10 @@ public class Ship {
     private String color;
 
     private String log;
+
+    private Anchor anchor;
+
+    private Wheel wheel;
 
     public String getName() {
         return name;
@@ -43,4 +52,19 @@ public class Ship {
                 '}';
     }
 
+    public Anchor getAnchor() {
+        return anchor;
+    }
+
+    public Wheel getWheel() {
+        return wheel;
+    }
+
+    public void setAnchor(Anchor anchor) {
+        this.anchor = anchor;
+    }
+
+    public void setWheel(Wheel wheel) {
+        this.wheel = wheel;
+    }
 }
