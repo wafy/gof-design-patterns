@@ -1,6 +1,8 @@
 package singleton;
 
-public class Settings {
+import java.io.Serializable;
+
+public class Settings implements Serializable {
 
     /**
      * new를 사용해서 외부에서 객체를 생성하지 못한다.
@@ -26,10 +28,19 @@ public class Settings {
      * 4. static inner 클래스 사용하기
      * - 권고하는 방법중 하나
      * - 리플렉션 사용하면 문제 발생
+     * - 역직렬화
      *
      */
 
     public static Settings getInstance() {
         return SettingsHolder.INSTANCE;
+    }
+
+    /**
+     * 역직렬화시 필수로 호출되는 함수
+     * @return
+     */
+    protected Object readResolve() {
+        return getInstance();
     }
 }
