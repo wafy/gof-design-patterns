@@ -16,3 +16,9 @@
   - 인터페이스에 기본 구현체를 만들 수 있는 기능 
 - 자바9에 추가된 인터페이스의 private 메서드 기능 
   - 인터페이스에 private 메서드를 추가하여 사용할 수 있다.
+
+- 단순한 팩토리 패턴 
+  - 매개변수의 값에 따라 또는 메소드에 따라 각기 다른 인스턴스를 리턴하는 단순한 버전의 팩토리 패턴 
+- java.lang.Calendar 또는 java.lang.NumberFormat
+- 스프링의 BeanFactory
+  - Object 타입이 Product를 만드는 BeanFactory라는 Creator!
