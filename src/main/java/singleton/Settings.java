@@ -25,6 +25,8 @@ public class Settings {
      * - jdk 1.5부터 동작함
      * 4. static inner 클래스 사용하기
      * - 권고하는 방법중 하나
+     * - 리플렉션 사용하면 문제 발생
+     *
      */
 
     public static Settings getInstance() {
