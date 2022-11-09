@@ -4,12 +4,12 @@ public class App {
 
     public static void main(String[] args) {
         GithubRepository repository = new GithubRepository();
-        repository.setUser("호순이");
-        repository.setName("브릿숏");
+        repository.setUser("wafy");
+        repository.setName("gof-design-patterns");
 
         GithubIssue githubIssue = new GithubIssue(repository);
         githubIssue.setId(1);
-        githubIssue.setTitle("구름아 보고싶다..");
+        githubIssue.setTitle("test issue");
 
         String url = githubIssue.getUrl();
         System.out.println("url = " + url);

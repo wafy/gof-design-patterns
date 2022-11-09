@@ -15,7 +15,10 @@ public class GithubIssue {
     }
 
     public String getUrl() {
-        return null;
+        return String.format("https://github.com/%s/%s/issues/%d",
+                repository.getUser(),
+                repository.getName(),
+                this.getId());
     }
 }
 
