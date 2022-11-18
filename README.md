@@ -201,3 +201,21 @@
   - 기존 코드를 변경하지 않고 새로운 Expression을 추가할 수 있다.
 - 단점
   - 복잡한 문법을 표현하려면 Expression과 Parser가 복잡해진다.
+
+# 이터레이터 패턴 
+## 내부 구현을 들어내지 않고 집합객체를 외부 클라이언트가 순회하는 패턴
+- 집합 객체를 순회하는 클라이언트 코드를 변경하지 않고 다양한 순회 방법을 제공할 수 있다.
+![이터레이터패턴](https://user-images.githubusercontent.com/310264/202644765-de2e54e1-0778-4096-a7d7-4232a0efa024.png)
+- 모든 순회과정을 iterator로 사용할 필요는 없다.
+- 장점 
+  - 집합 객체에 손쉽게 접근 할 수 있다.(집합 객체의 구조를 몰라도 된다.)
+  - SRP
+  - OCP
+- 단점 
+  - 클래스가 늘어나고 복잡도가 증가한다.
+- 자바 
+  - java.utils.Enumeration과 java.util.Iterator
+  - java StAX(Streaming API for XML)의 Iterator 기반 API
+    - XmlEventReader, XmlEventWrite
+- 스프링
+  - Compositelterator
