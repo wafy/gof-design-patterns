@@ -346,6 +346,8 @@
   - HttpServlet.doGet ...goPost...
 - 스프링
   -  SecurityConfigurer.init
+  - JdbcTemplate
+  
 
 # 템플릿 콜백 패턴 
 ## 콜백으로 상속 대신 위임을 사용하는 템플릿 패턴 
